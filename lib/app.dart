@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
               ? themeMode == true
                   ? ThemeMode.dark
                   : ThemeMode.light
-              : ThemeMode.light,
+              : ThemeMode.system,
           darkTheme: AppThemeManager.darkTheme,
           theme: AppThemeManager.lightTheme,
           routerDelegate: router.routerDelegate,
