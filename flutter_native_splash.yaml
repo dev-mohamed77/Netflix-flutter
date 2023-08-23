@@ -1,0 +1,13 @@
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/netflix.png
+  color_dark: "#121212"
+  image_dark: assets/images/netflix.png
+
+  android_12:
+    image: assets/images/netflix.png
+    icon_background_color: "#111111"
+    image_dark: assets/images/netflix.png
+    icon_background_color_dark: "#121212"
+
+  web: true
