@@ -98,7 +98,6 @@ class ErrorHandle with _$ErrorHandle {
   }
 
   static ErrorHandle getDioException(error) {
-    print(error);
     if (error is Exception) {
       try {
         late ErrorHandle errorHandle;

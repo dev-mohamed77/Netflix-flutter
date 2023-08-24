@@ -61,9 +61,7 @@ class PhoneFormSection extends StatelessWidget {
                 inputFormatters: [
                   PhoneInputFormatter(
                     allowEndlessPhone: false,
-                    onCountrySelected: (value) {
-                      print(value);
-                    },
+                    onCountrySelected: (value) {},
                     shouldCorrectNumber: true,
                   ),
                 ],

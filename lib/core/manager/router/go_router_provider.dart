@@ -10,7 +10,6 @@ import 'global_navigator_key.dart';
 final goRouterProvider = Provider<GoRouter>((ref) {
   final token = ref.watch(tokenLocalProvider);
   ref.read(getUserByTokenUseCaseProvider.notifier).execute();
-  print("route ref");
   return GoRouter(
     initialLocation: token != null ? Routes.home : Routes.onBoardingScreen,
     navigatorKey: GlobalNavigatorKey.rootNavigator,

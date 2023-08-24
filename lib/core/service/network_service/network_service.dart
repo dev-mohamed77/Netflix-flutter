@@ -45,7 +45,7 @@ class DioService implements NetworkService {
   final Ref ref;
   DioService._({required this.ref}) {
     dio = Dio(BaseOptions(
-      baseUrl: "http://192.168.1.7:3000/",
+      baseUrl: "https://pleasant-foal-buckle.cyclic.cloud/",
       receiveDataWhenStatusError: true,
       sendTimeout: const Duration(seconds: 15),
       connectTimeout: const Duration(seconds: 15),

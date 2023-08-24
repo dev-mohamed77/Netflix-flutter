@@ -5,12 +5,10 @@ class TokenLocal extends StateNotifier<String?> {
 
   setToken(String token) {
     state = token;
-    print("state =========>>>>>>>>> $state");
   }
 
   setNull() {
     state = null;
-    print("state =========>>>>>>>>> $state");
   }
 }
 

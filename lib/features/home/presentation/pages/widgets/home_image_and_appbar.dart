@@ -43,13 +43,20 @@ class HomeImageAndAppBarSection extends StatelessWidget {
               ),
               Row(
                 children: [
-                  IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.search,
-                      size: 30,
-                      color: AppColorsManager.white,
-                    ),
+                  Consumer(
+                    builder: (BuildContext context, WidgetRef ref, _) {
+                      return IconButton(
+                        onPressed: () {
+                          context.push(Routes.explore);
+                          ref.read(navigationBarProvider.notifier).select(1);
+                        },
+                        icon: const Icon(
+                          Icons.search,
+                          size: 30,
+                          color: AppColorsManager.white,
+                        ),
+                      );
+                    },
                   ),
                   IconButton(
                     onPressed: () {},
